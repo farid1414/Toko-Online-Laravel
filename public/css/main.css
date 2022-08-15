@@ -1,0 +1,966 @@
+body {
+    font-family: "Montserrat", sans-serief;
+}
+body .form-control {
+    background-color: #f3f3f3;
+}
+body .form-control:hover {
+    background-color: #f3f3f3;
+    text-decoration: none;
+}
+.row .no-gutter {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+.row.no-gutter [class*="col-"]:not(:first-child),
+.row.no-gutter [class*="col-"]:not(:last-child) {
+    padding-right: 4px;
+    padding-left: 2px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+/* CSS untuk page content */
+.page-content {
+    margin-top: 100px;
+}
+/* AkhirCSS untuk page content */
+
+/* CSS untuk icon keranjang */
+.nav-item .nav-link .keranjang {
+    font-size: 30px;
+}
+/* AkhirCSS untuk icon keranjang */
+
+/* CSS untuk navbar  */
+.navbar-store {
+    padding-top: 15px;
+}
+.navbar-store .navbar-nav .nav-item .btn-daftar {
+    background: #081ee8;
+}
+.navbar-store .navbar-nav .nav-item .btn-masuk {
+    border: 1px solid #081ee8;
+}
+.navbar-store .navbar-nav .nav-toko {
+    border-left: 2px solid #ddd;
+    padding-left: 20px;
+}
+.navbar-store .navbar-nav .nav-toko .pelajari-toko {
+    font-weight: 600;
+    color: #081ee8;
+}
+.navbar-store .navbar-nav .nav-toko .pelajari-toko:hover {
+    color: #081ee8;
+    text-decoration: none;
+}
+/* akhir CSS navbar */
+
+/* CSS untuk foto profil  */
+.profil-picture {
+    max-height: 30px;
+}
+/* akhir CSS foto proofil */
+
+/* CSS untuk card badge / notifikasi  */
+.card-badge {
+    display: inline-block;
+    min-width: 15px;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 1px 6px 2px 6px;
+    text-align: center;
+    background: #081ee8;
+    color: #fefefe;
+    margin-left: -8px;
+}
+/* Akhir CSS untuk card badge / notifikasi*/
+
+/* CSS Ketika navbar discroll maka akan muncul background warna putih dan navbar akan tetap  */
+.navbar-fixed-top.scrolled {
+    background-color: #fff;
+    transition: background-color 200ms linear; /*transition background-color selama 0.2 detik secara liniear */
+}
+/* Akhir CSS navbar scroller */
+
+/* CSS  untuk pages home  */
+.pages-home h5 {
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+/* akhir CSS untuk pages home */
+
+/* CSS untuk pages home bagian kategori pilihan  */
+.pages-home .store-trend-categories {
+    margin-top: 30px;
+}
+/* Akhir CSS untuk pages home bagian kategori pilihan  */
+
+/* CSS untuk pages  home bagian produk terbaru */
+.pages-home .store-new-categories {
+    margin-top: 20px;
+}
+/* Akhir CSS untuk pages  home bagian produk terbaru */
+
+/* CSS untuk home bagian kenapa pilih putrashop*/
+.pages-home .store-putrashop {
+    margin-top: 25px;
+}
+/* AkhirCSS untuk home bagian kenapa pilih putrashop*/
+
+/* CSS untuk component-categori */
+.component-categori {
+    background: #758bff;
+    border-radius: 10px;
+    padding: 30px 30px 10px 30px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    transition: all 0.2s ease-in-out;
+}
+/* Akhir CSS untuk component-categori */
+
+/* CSS untuk component categori hover */
+.component-categori:hover {
+    transform: scale(1.1);
+    text-decoration: none;
+}
+/* Akhir css untuk component-categori hover */
+
+/* CSS untuk component-categori bagian text */
+.component-categori .categori-text {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    line-height: 24px;
+    margin-top: 12px;
+    color: #ffffff;
+}
+/* akhir CSS component-categori bagian text */
+
+/* CSS untuk card produk */
+.card-produk {
+    margin-bottom: 20px;
+}
+/* CSS untuk komponen produk */
+.card-produk .component-products {
+    margin-bottom: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    filter: drop-shadow(3px 5px 6px rgba(0, 0, 0, 0.25));
+    width: 100%;
+    min-height: 100%;
+    padding: 5px 6px 5px 6px;
+}
+.card-produk .component-products:hover {
+    text-decoration: none;
+}
+/* Akhir CSS untuk komponen produk  */
+
+/* CSS untuk komponen thumbnail yang berada di komponen produk */
+.component-products .product-thumbnail {
+    width: 100%;
+    height: 230px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+/* AkhirCSS untuk komponen thumbnail yang berada di komponen produk */
+
+/* CSS untuk komponen gambar produk */
+.card-produk .component-products .product-image {
+    width: 100%;
+    height: 100%;
+    background-color: #ddd;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all 0.3s ease;
+}
+.product-image:hover,
+.product-image:focus {
+    transform: scale(1.5);
+}
+/* Akhir CSS untuk komponen gambar produk*/
+
+/* CSS untuk komponen deskripsi dari produk */
+.card-produk .component-products .product-text {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-top: 15px;
+}
+/* Akhir CSS untuk komponen deskripsi dari produk */
+
+/* CSS untuk komponen dari harga produk */
+.card-produk .component-products .product-price p {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    color: #050505;
+    margin-top: 20px;
+}
+/* Akhir CSS untuk komponen dari harga produk */
+
+/* CSS untuk komponend ari lokasi produk */
+.card-produk .component-products .product-location small {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #a5a5a5;
+}
+/* AkhirCSS untuk komponend ari lokasi produk */
+
+/* Card untuk putrashop */
+.card-putrashop {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+/* Akhir Card untuk putrashop */
+
+/* CSS untuk putrashop judul */
+.card-putrashop .putrashop-judul {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #0f27fd;
+}
+/* Akhir CSS untuk putrashop judul */
+
+/* CSS untuk putrashop isi */
+.card-putrashop .putrashop-isi p {
+    margin-top: 15px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+}
+/* Akhir CSS untuk putrashop isi */
+
+/* CSS Untuk footer */
+footer {
+    border-top: 2px solid #e4e4e4;
+    margin-top: 150px;
+}
+.footer-judul {
+    margin-top: 30px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.footer-isi ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.footer-isi li a {
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 6px 0 6px;
+    color: #000000;
+}
+.footer-isi {
+    margin: 20px 0 15px;
+}
+.footer-isi .footer-copywr {
+    margin: 10px 0 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+    color: #a2a0a0;
+}
+.footer-isi ul li a:hover {
+    text-decoration: none;
+}
+/* Akhir CSS Untuk footer */
+
+/* ============== CSS untuk page DETAILS ===================== */
+
+/* CSS Untuk breadcrumbs */
+.store-breadcrumbs .breadcrumb {
+    background: transparent;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.breadcrumb-item .active p {
+    font-weight: 00;
+    color: #0c0000;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    padding-left: 15px;
+    padding-right: 25px;
+}
+.breadcrumb-item a {
+    color: #979797;
+}
+.breadcrumb-item a:hover {
+    text-decoration: none;
+}
+/* Akhir css untuk breadcrumb */
+
+/* CSS Untuk gambar produk */
+.gambar-produk {
+    width: 100%;
+    height: 24rem;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+.gambar-produk img {
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    background-color: #ddd;
+}
+.thumbnail {
+    margin-top: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 100%;
+    height: 7rem;
+}
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    background-color: #ddd;
+    border-radius: 10px;
+}
+.thumb:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+.gambar-item {
+    margin-bottom: 15px;
+}
+/* Akhir css untuk gambar produk */
+
+/* CSS Untuk deskripsi dari detail produk */
+.nama-produk {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+}
+.ket-produk {
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+}
+.harga-produk h3 {
+    margin-top: 17px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+}
+.kondisi-produk {
+    margin-top: 2rem;
+}
+.kondisi-produk p {
+    color: #c4c4c4;
+    padding: 0;
+    margin: 0;
+}
+.kondisi-produk b {
+    color: #0e25f3;
+}
+.deskripsi-produk {
+    margin-top: 1rem;
+    color: #c4c4c4;
+}
+.deskripsi-produk p {
+    margin-top: 6px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+.pengiriman-produk {
+    color: #c4c4c4;
+}
+.pengiriman-produk p {
+    margin-top: 5px;
+    color: #000000;
+    padding-left: 5px;
+}
+/* Akhir CSS Untuk deskripsi dari detail produk */
+
+/* CSS uuntuk detail toko  produk */
+.toko-produk {
+    margin-top: 15px;
+}
+.gambar-toko {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ddd;
+}
+.gambar-toko img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #ddd;
+}
+.nama-toko {
+    font-weight: 700;
+    font-size: 17px;
+}
+.nama-toko p {
+    font-size: 12px;
+    margin-top: 2px;
+}
+.details-product .component-chat .chat-toko {
+    margin-top: 3px;
+}
+.details-product .component-chat .chat-toko .logo-chat {
+    font-size: 2.3rem;
+    padding-right: 10px;
+    margin-top: 5px;
+    color: #000000;
+}
+.details-product .component-chat .logo-toko .chat-toko .chat-text {
+    font-size: 14px;
+    color: #000000;
+}
+.details-product .component-chat:hover {
+    text-decoration: none;
+}
+.details-product .quantity button {
+    width: 40px;
+    border-radius: 8px;
+    padding: 5px 5px;
+    margin: 0 5px;
+    font-size: 18px;
+    font-weight: 700;
+    border: 2px solid #050505;
+}
+.details-product .quantity input {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100px;
+    border: 2px solid #050505;
+    border-radius: 8px;
+}
+.details-product .quantity-text {
+    font-size: 14px;
+    font-weight: 400;
+}
+/* Akhir CSS uuntuk detail toko  produk */
+
+/* CSS untuk tombol tambhakan ke kerjang */
+.tombol-produk {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 15px;
+}
+.tombol-produk .btn-produk {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 2rem 8px 2rem;
+    border-radius: 5px;
+    background-color: #0e25f3;
+    color: white;
+}
+.tombol-produk .btn-produk-mute {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 2rem;
+    cursor: no-drop;
+    border-radius: 5px;
+    border: none;
+    background-color: #a2a0a0;
+    color: white;
+}
+.tombol-produk .btn-produk-mute:hover {
+    cursor: no-drop;
+    color: white;
+}
+.tombol-produk .btn-produk:hover {
+    color: white;
+    opacity: 0.8;
+}
+.tombol-produk .btn-produk .fa {
+    font-size: 20px;
+    padding-left: 5px;
+}
+/* Akhir CSS untuk tombol tambhakan ke kerjang */
+
+/* CSS Untuk review produk  */
+.review-product h5 {
+    margin-top: 2rem;
+    margin-bottom: 15px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000000;
+}
+.review-product .media img {
+    max-width: 50px;
+    background-color: #ddd;
+}
+.review-product .media-body h5 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #000000;
+}
+.review-product .media-body p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+/* Akhir CSS Untuk review produk  */
+
+/* CSS untuk thumbnail gambar */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.fade {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+/* CSS untuk thumbnail gambar */
+/* ============== Akhir CSS untuk page DETAILS =============== */
+
+/* ============== CSS Untuk detail card ====================== */
+.store-cart .col-table {
+    border-top: 3px solid #e4e4e4;
+}
+.store-cart h2 {
+    font-size: 18px;
+    color: #0c0d36;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.store-cart .product-tittle {
+    font-size: 18px;
+    color: #0c0d36;
+    margin-top: 15px;
+}
+.store-cart .product-toko {
+    font-size: 14px;
+    color: #979797;
+}
+.store-cart .table-cart {
+    margin: 17px -15px 20px -15px;
+}
+.store-cart .table-cart th {
+    font-weight: 600;
+}
+.store-cart .table-cart .img-cart {
+    border-radius: 10px;
+    max-height: 8rem;
+    background-color: #ddd;
+}
+.store-cart .table-cart .btn-remove-cart {
+    margin-top: 10px;
+    background-color: #fc5e84;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.store-cart .table-cart .btn-remove-cart:hover {
+    opacity: 0.7;
+}
+.store-cart .btn-store {
+    background-color: #081ee8;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+}
+.store-cart .btn-store:hover {
+    opacity: 0.7;
+    color: white;
+}
+
+/* ============== Akhir CSS Untuk detail card ================ */
+
+/* ============== CSS untuk page pembelian =================== */
+.page-content .section-pembelian .tab-content .card {
+    border: none;
+}
+.page-content .section-pembelian .tab-content .card-list {
+    margin-bottom: 10px;
+    background-color: #f5f5fb;
+}
+.page-content .section-pembelian .tab-content .card-list img {
+    background-color: white;
+}
+.page-content .section-pembelian .tab-content .card-list h6 {
+    font-size: 16px;
+    color: #000000;
+    line-height: 60px;
+}
+.page-content .section-pembelian .tab-content .card-list .material-icons {
+    color: #000000;
+    line-height: 60px;
+}
+.page-content .section-pembelian .card-list:hover {
+    text-decoration: none;
+}
+/* ============== Akhir CSS untuk page pembelian ============= */
+
+/* ============== CSS untuk page detail pembelian ============ */
+.page-content .section-detail-pembelian .card {
+    border: none;
+}
+
+.page-content .section-detail-pembelian .card-body .produk-tittle {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #c5c5c5;
+}
+.page-content .section-detail-pembelian .card-body .produk-subtittle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+/* ============== CSS untuk page detail pembelian ============ */
+
+/* ============== CSS Untuk page Success ===================== */
+.page-success .row-login {
+    min-height: 75vh;
+}
+.section-success .h2 {
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 0;
+}
+.section-success .btn-signup {
+    background-color: #f3f3f3;
+    color: #999393;
+    font-weight: 400;
+}
+.section-success .btn-signup:hover {
+    color: #5a5656;
+    opacity: 0.6;
+}
+/* ============== Akhir CSS Untuk page Success =============== */
+
+/* ============== CSS untuk page login ======================= */
+.page-auth .row-login {
+    min-height: 70vh;
+}
+.page-auth .form-control {
+    border-radius: 10px;
+    background-color: #f3f3f3;
+}
+.page-auth .btn-register {
+    background-color: #f3f3f3;
+    color: #999393;
+    font-weight: 400;
+}
+.page-auth .btn-register:hover {
+    opacity: 0.6;
+    color: #5a5656;
+}
+/* ============== Akhir CSS untuk page login ================= */
+
+/* ============== CSS Untuk page register ==================== */
+.page-auth .store-register {
+    border: 2px solid #e4e4e4;
+    padding: 20px 30px;
+}
+.page-auth .store-masuk {
+    font-size: 14px;
+    color: #c4c4c4;
+}
+.page-auth .store-register a {
+    color: #081ee8;
+    font-weight: 600;
+}
+.page-auth .store-register a:hover {
+    text-decoration: none;
+    opacity: 0.7;
+}
+/* ============== Akhir CSS Untuk page register ============== */
+
+/* ==============  CSS Untuk Page Admin ====================== */
+
+/* +============= CSS Untuk Sidebar dashboard admin ========== */
+.page-dashboard #page-content-wrapper {
+    background-color: #f5f5fb;
+    min-width: 100vw;
+}
+.page-dashboard #sidebar-wrapper {
+    margin-top: 40px;
+    min-height: 100vh; /* Supaya tampilan sidebar full satu layar*/
+    margin-left: -15rem; /* digunakan untuk menyembunyikan sidebar pada saat bentuk desktop*/
+    transition: margin 0.25 ease-out;
+}
+.page-dashboard #sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+.page-dashboard #sidebar-wrapper .list-group {
+    width: 15rem;
+}
+.page-dashboard .navbar-store {
+    margin-top: 0;
+    background-color: #f5f5fb;
+    box-shadow: 0px 4px 5px #cacad1;
+}
+.page-dashboard #wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+.page-dashboard .list-group-item {
+    border: 0;
+    font-size: 16px;
+    color: #c5c5c5;
+}
+.page-dashboard .list-group-item.active {
+    background: linear-gradient(
+        280deg,
+        rgba(13, 16, 177, 0.32) 32%,
+        rgba(126, 121, 121, 0) 100%
+    );
+    border-right: 3px solid #5d18ff;
+    color: #0a0a0a;
+    font-weight: 500;
+}
+/* +============  Akhir CSS Untuk Sidebar dashboard admin ==== */
+
+/* CSS untuk page content */
+.page-dashboard .section-content {
+    margin-top: 100px;
+}
+.page-dashboard .section-content h5 {
+    font-weight: 500;
+    font-size: 18px;
+}
+.page-dashboard .section-content .dashboard-tittle {
+    font-weight: 500;
+    font-size: 24px;
+}
+.page-dashboard .section-content .dashboard-subtittle {
+    font-weight: 300;
+    font-size: 16px;
+    color: #9191a9;
+}
+/* Akhir CSS untuk page content */
+
+/* CSS untuk card detail transaksi*/
+.page-dashboard .section-content .dashboard-content .card {
+    background: #fefefe;
+    box-shadow: 0px 4px 15px #f1f1f8;
+    border-radius: 10px;
+    border: none;
+    text-decoration: none !important;
+}
+
+.page-dashboard
+    .section-content
+    .dashboard-content
+    .card
+    .dashboard-card-tittle {
+    font-size: 16px;
+    color: #c5c5c5;
+}
+.page-dashboard
+    .section-content
+    .dashboard-content
+    .card
+    .dashboard-card-subtittle {
+    font-weight: 600;
+    line-height: 50px;
+    font-size: 25px;
+}
+
+/* CSS untuk card list */
+.page-dashboard .section-content .card-list {
+    margin-bottom: 10px;
+}
+.page-dashboard .section-content .card-list img {
+    background-color: #ddd;
+}
+.page-dashboard .section-content .card-list h6 {
+    font-size: 16px;
+    color: #000000;
+    line-height: 60px;
+}
+.page-dashboard .section-content .card-list .material-icons {
+    color: #000000;
+    line-height: 60px;
+}
+/* AKhir CSS untuk card list */
+
+/* AKhir CSS untuk card */
+
+/* ============= CSS Untuk page transaksi =================== */
+.page-dashboard .nav-pills .nav-link {
+    font-weight: normal;
+    font-size: 18px;
+    color: #c4c4c4;
+    border-radius: 0;
+}
+.page-dashboard .nav-pills .nav-link.active {
+    font-weight: 600;
+    font-size: 18px;
+    color: #050505;
+    background: none;
+    border-bottom: 2px solid #050505;
+}
+/* ============= Akhir CSS Untuk page transaksi ============= */
+
+/* ============= CSS Untuk page produk toko ================= */
+.page-dashboard .dashboard-content .card-dashboard-produk {
+    margin-bottom: 20px;
+}
+.page-dashboard .dashboard-content .card-dashboard-produk .card-body img {
+    max-height: 140px;
+    background-color: #ddd;
+    border-radius: 10px;
+}
+.page-dashboard
+    .dashboard-content
+    .card-dashboard-produk
+    .card-body
+    .produk-tittle {
+    font-weight: normal;
+    font-size: 18px;
+    color: #000000;
+}
+.page-dashboard
+    .dashboard-content
+    .card-dashboard-produk
+    .card-body
+    .produk-price {
+    font-weight: normal;
+    line-height: 25px;
+    font-size: 16px;
+    color: #c5c5c5;
+}
+/* ============= Akhir CSS Untuk page produk toko =========== */
+
+/* ============= CSS untuk page edit produk ================= */
+.page-dashboard
+    .dashboard-content
+    .card-body
+    .gallery-container
+    .delete-gallery {
+    display: block;
+    position: absolute;
+    top: -10px;
+    right: 0;
+}
+.page-dashboard .dashboard-content .card-body .gallery-container .edit-gallery {
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: 5px;
+}
+.page-dashboard
+    .dashboard-content
+    .card-body
+    .gallery-container
+    .produk-gallery {
+    max-height: 130px;
+}
+.page-dashboard .dashboard-content .card-body .gallery-container {
+    background-color: #ddd;
+    box-shadow: 0px 4px 5px #cacad1;
+}
+/* ============= Akhir CSS untuk page edit produk =========== */
+
+/* ============= CSS Untuk page detail transaksi ============ */
+.page-dashboard .dashboard-content .card-body .produk-tittle {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #c5c5c5;
+}
+.page-dashboard .dashboard-content .card-body .produk-subtittle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+/* ============= Akhir CSS Untuk page detail transaksi ====== */
+
+/* ============= Akhir CSS Untuk Page Admin ================= */
+
+/* repsonsive ketika ditampilakn dalam bentuk phone */
+@media only screen and (min-width: 500px) {
+    .navbar-nav .nav-item .nav-link {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .navbar-nav .form-inline {
+        display: inline-block;
+    }
+}
+/* akhir responsive  ketika ditampilakn dalam bentuk phone*/
+@media (max-width: 670px) {
+    .navbar-store {
+        background-color: #fff !important;
+    }
+    .page-dashboard .dashboard-content .card-dashboard-produk .card-body img {
+        max-height: 100%;
+    }
+}
+/* responisve hanya ditampilkan saat layar berukuran desktop saja */
+@media only screen and (min-width: 992px) {
+    .navbar-store .navbar-nav .nav-item .nav-link {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .page-dashboard #sidebar-wrapper {
+        margin-left: 0;
+        margin-top: 0px;
+    }
+    .page-dashboard #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+    .page-dashboard .navbar-store {
+        background-color: transparent;
+        box-shadow: none;
+    }
+    .page-dashboard #wrapper.toggled #sidebar-wrapper {
+        margin-left: -15rem;
+    }
+    .navbar-store .nav-item .dropdown-menu {
+        background-color: #f5f5fb;
+        border-radius: 10px;
+    }
+    .page-dashboard .section-content {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+}
+
+/* akhir ketika ditampilakn dalam bentuk phone */

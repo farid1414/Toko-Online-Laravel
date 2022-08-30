@@ -21,10 +21,10 @@
                     </form>
                 </li>
                 <li class="nav-item">
+                    @if (Auth()->user())
                     @php
                         $carts = \App\Models\Carts::where('users_id', Auth()->user()->id)->count();
                     @endphp
-                    @if (Auth()->user())
                         <a class="nav-link px-3" href="{{ route('card') }}">
                             <i class="fa fa-shopping-cart keranjang"></i>
                             @if ($carts > 0)

@@ -102,13 +102,14 @@
                             <h2>Rincian Pengiriman</h2>
                         </div>
                     </div>
-                    <form action="" method="post" id="locations">
+                    <form action="{{ route('checkout-card') }}" method="POST" id="locations" enctype="multipart/form-data">
                         @csrf
+                        <input type="hidden" name="total_price" value="{{ $totalPrice }}">
                         <div class="row" data-aos="fade-up" data-aos-delay="200">
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="alamatSatu">Alamat Lengkap</label>
-                                    <input spellcheck="false" type="text" class="form-control" name="alamatSatu"
+                                    <input spellcheck="false" type="text" class="form-control" name="alamat"
                                         id="alamatSatu" value="Kemendung Cerme" />
                                 </div>
                             </div>
@@ -195,7 +196,7 @@
                         </div>
                     </form>
                 @else
-                    <div class="row">
+                    <div class="row" data-aos="fade-up" data-aos-delay="100">
                         <div class="col-12 justify-content-center text-center mt-4">
                             <h3>Anda Belum Memasukkan Belanja Ke Keranjang</h3>
                         </div>

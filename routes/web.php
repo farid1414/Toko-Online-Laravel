@@ -8,6 +8,7 @@ use App\Http\Controllers\TransaksiController;
 use App\Http\Controllers\TokoController;
 use App\Http\Controllers\TokoTransaksiController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\toko\ProdukController;
 use App\Http\Controllers\HomeController;
 
@@ -39,10 +40,14 @@ Route::get('/pembelian', [TransaksiController::class, 'index'])->name('pembelian
 Route::get('/pembelian/detail', [TransaksiController::class, 'detailPembelian'])->name('detail-pembelian-produk');
 
 // route middleware auth
-Route::middleware(['web'])->group(function () {
+Route::group(['middleware' => ['auth']], function (){
     Route::post('addToCard/{id}', [DetailsController::class, 'addToCard'])->name('add-to-card');
     Route::get('/card', [CardController::class, 'index'])->name('card');
     Route::DELETE('/card/{id}', [CardController::class, 'deleteCard'])->name('delete-card');
+    Route::post('/card', [CheckoutController::class, 'checkoutCart'])->name('checkout-card');
+    // callback midtrans
+    Route::post('/card/callback', [CheckoutController::class, 'callback'])->name('callback-midtrans');
+
 
 });
 
